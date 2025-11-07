@@ -1,0 +1,86 @@
+{
+  "name": "Article",
+  "type": "object",
+  "properties": {
+    "title": {
+      "type": "string",
+      "description": "Article title"
+    },
+    "slug": {
+      "type": "string",
+      "description": "URL-friendly slug for the article"
+    },
+    "content": {
+      "type": "string",
+      "description": "Article content in HTML format"
+    },
+    "excerpt": {
+      "type": "string",
+      "description": "Short summary of the article"
+    },
+    "featured_image": {
+      "type": "string",
+      "description": "URL of the featured image"
+    },
+    "category": {
+      "type": "string",
+      "enum": [
+        "Home Care Tips",
+        "Product Guides",
+        "Industry News",
+        "Cleaning Hacks",
+        "Baby Care",
+        "Personal Hygiene",
+        "Eco-Friendly Living"
+      ],
+      "description": "Article category"
+    },
+    "tags": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "description": "Article tags for better organization"
+    },
+    "meta_title": {
+      "type": "string",
+      "description": "SEO meta title"
+    },
+    "meta_description": {
+      "type": "string",
+      "description": "SEO meta description"
+    },
+    "meta_keywords": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "description": "SEO keywords"
+    },
+    "author_name": {
+      "type": "string",
+      "description": "Article author name"
+    },
+    "read_time": {
+      "type": "number",
+      "description": "Estimated reading time in minutes"
+    },
+    "status": {
+      "type": "string",
+      "enum": ["draft", "published", "archived"],
+      "default": "draft",
+      "description": "Publication status"
+    },
+    "published_date": {
+      "type": "string",
+      "format": "date-time",
+      "description": "Date when article was published"
+    },
+    "views": {
+      "type": "number",
+      "default": 0,
+      "description": "Number of views"
+    }
+  },
+  "required": ["title", "content", "category"]
+}
