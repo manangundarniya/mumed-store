@@ -47,7 +47,7 @@ export default function Hero() {
             transition={{ duration: 0.8, ease: "easeOut" }}
             whileHover={{ scale: 1.05 }}
           >
-            <div className="bg-white/95 backdrop-blur-sm px-8 py-8 rounded-3xl shadow-2xl border-2 border-blue-200/50 hover:border-blue-300/70 transition-all">
+            <div className="bg-white/95 backdrop-blur-sm px-3 py-3 rounded-3xl shadow-2xl border-2 border-blue-200/50 hover:border-blue-300/70 transition-all">
               <img
                 src="https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/6905e6854a2420e11a4a6579/6f30661cd_WhatsApp_Image_2025-11-01_at_30929_PM-removebg-preview.png"
                 alt="Mumed Store Logo"
